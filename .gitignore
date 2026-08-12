@@ -1,0 +1,5 @@
+.venv/ 
+SentimentEnv/ 
+__pycache__/ 
+*.pyc 
+users.json 
