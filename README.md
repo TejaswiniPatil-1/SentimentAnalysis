@@ -8,26 +8,46 @@
 
 <br>
 
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-F7931E?style=for-the-badge\&logo=scikitlearn\&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge\&logo=scikitlearn\&logoColor=white)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live%20App-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://streamlit.io/)
 ![NLP](https://img.shields.io/badge/NLP-Sentiment%20Analysis-8A2BE2?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge\&logo=github)
 
 <br>
 
-**Analyze • Predict • Compare • Visualize**
+[![Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-Launch_SentimentIQ-00C853?style=for-the-badge)](https://sentimentiq-tejaswini.streamlit.app/)
+
+<br>
+
+### Analyze • Predict • Compare • Visualize
 
 </div>
 
 ---
 
-## 🚀 About The Project
+## 🚀 About SentimentIQ
 
-**SentimentIQ** is an intelligent sentiment analysis system that applies **Natural Language Processing (NLP)** and **Machine Learning** techniques to analyze textual data and predict its sentiment.
+**SentimentIQ** is a web-based sentiment analysis system that combines **Natural Language Processing (NLP)** and **Machine Learning** to analyze textual data and predict sentiment in real time.
 
-Instead of relying on a single classification algorithm, SentimentIQ provides a **multi-model framework** that enables sentiment prediction and comparative analysis using multiple machine learning approaches.
+Rather than relying on a single classification technique, the system provides a **multi-model framework** that allows different machine learning algorithms to be evaluated within a unified application.
 
-The project combines **text preprocessing, feature engineering, classification, model evaluation, and visualization** within a structured web-based application.
+The project integrates the complete machine learning workflow — from text preprocessing and feature extraction to classification, comparative analysis, and interactive visualization.
+
+> 💡 **Goal:** Transform unstructured textual data into meaningful sentiment insights through an accessible and interactive machine learning application.
+
+---
+
+## 🌐 Live Application
+
+<div align="center">
+
+### Experience SentimentIQ directly in your browser
+
+[![Open Application](https://img.shields.io/badge/OPEN_SENTIMENTIQ-LIVE_APPLICATION-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://sentimentiq-tejaswini.streamlit.app/)
+
+**No installation required — launch and analyze text directly online.**
+
+</div>
 
 ---
 
@@ -35,54 +55,63 @@ The project combines **text preprocessing, feature engineering, classification, 
 
 <table>
 <tr>
+
 <td width="50%">
 
 ### ⚡ Real-Time Prediction
 
-Analyze user-provided textual content and generate sentiment predictions through an interactive application.
+Analyze user-provided textual content and generate sentiment predictions through an interactive interface.
 
 </td>
+
 <td width="50%">
 
 ### 🤖 Multi-Model Analysis
 
-Evaluate multiple machine learning algorithms within a unified sentiment analysis framework.
+Compare multiple machine learning algorithms within a unified sentiment analysis framework.
 
 </td>
+
 </tr>
 
 <tr>
+
 <td width="50%">
 
-### 🧹 NLP Processing
+### 🧠 NLP Pipeline
 
-Processes textual data through cleaning, normalization, and feature extraction techniques.
+Processes textual data using cleaning, normalization, transformation, and feature extraction techniques.
 
 </td>
+
 <td width="50%">
 
-### 📊 Visual Analytics
+### 📊 Interactive Analytics
 
-Presents analytical information through structured charts and visualizations.
+Visualizes analytical results to make model predictions and performance easier to understand.
 
 </td>
+
 </tr>
 
 <tr>
+
 <td width="50%">
 
 ### 🧩 Modular Architecture
 
-Separates the ML pipeline, interface, authentication, styling, and visualization components.
+Separates machine learning, visualization, authentication, interface, and styling components.
 
 </td>
+
 <td width="50%">
 
 ### 🔐 Authentication
 
-Includes authentication functionality for controlled application access.
+Provides authentication functionality for controlled application access.
 
 </td>
+
 </tr>
 </table>
 
@@ -90,80 +119,83 @@ Includes authentication functionality for controlled application access.
 
 ## 🤖 Machine Learning Models
 
-The framework integrates multiple classification algorithms for sentiment analysis.
+SentimentIQ implements multiple supervised machine learning algorithms for sentiment classification.
 
-| Algorithm                         | Role                                                    |
-| :-------------------------------- | :------------------------------------------------------ |
-| **Logistic Regression**           | Linear baseline model for text classification           |
-| **Multinomial Naive Bayes**       | Probabilistic classifier optimized for textual features |
-| **Linear Support Vector Machine** | Margin-based classifier for high-dimensional text data  |
+| Algorithm                         | Description                                                                |
+| :-------------------------------- | :------------------------------------------------------------------------- |
+| **Logistic Regression**           | Efficient linear classifier suitable for high-dimensional textual features |
+| **Multinomial Naive Bayes**       | Probabilistic classifier widely used for text classification               |
+| **Linear Support Vector Machine** | Margin-based classifier effective for sparse and high-dimensional NLP data |
 
-This multi-model approach allows the system to evaluate and compare different classification strategies for sentiment prediction.
+The multi-model architecture enables comparative analysis of different approaches to text classification.
 
 ---
 
-## 🔄 How SentimentIQ Works
+## 🔄 System Workflow
 
 ```text
-                     ┌──────────────────────┐
-                     │      USER INPUT      │
-                     │     Text / Review    │
-                     └──────────┬───────────┘
-                                │
-                                ▼
-                     ┌──────────────────────┐
-                     │   TEXT PROCESSING    │
-                     │ Cleaning & Transform │
-                     └──────────┬───────────┘
-                                │
-                                ▼
-                     ┌──────────────────────┐
-                     │  FEATURE EXTRACTION  │
-                     │   Text → Numerical   │
-                     └──────────┬───────────┘
-                                │
-                                ▼
-              ┌─────────────────┼─────────────────┐
-              ▼                 ▼                 ▼
-       ┌────────────┐    ┌────────────┐    ┌────────────┐
-       │  Logistic  │    │  Naive     │    │ Linear SVM │
-       │ Regression │    │  Bayes     │    │            │
-       └──────┬─────┘    └──────┬─────┘    └──────┬─────┘
-              │                 │                 │
-              └─────────────────┼─────────────────┘
-                                ▼
-                     ┌──────────────────────┐
-                     │ SENTIMENT PREDICTION │
-                     └──────────┬───────────┘
-                                │
-                                ▼
-                     ┌──────────────────────┐
-                     │ RESULTS & ANALYTICS  │
-                     └──────────────────────┘
+                         ┌────────────────────────┐
+                         │       USER INPUT       │
+                         │    Text / Statement    │
+                         └───────────┬────────────┘
+                                     │
+                                     ▼
+                         ┌────────────────────────┐
+                         │    TEXT PREPROCESSING  │
+                         │ Cleaning • Normalizing │
+                         └───────────┬────────────┘
+                                     │
+                                     ▼
+                         ┌────────────────────────┐
+                         │   FEATURE EXTRACTION   │
+                         │   Text → Numerical     │
+                         └───────────┬────────────┘
+                                     │
+                                     ▼
+                ┌────────────────────┼────────────────────┐
+                │                    │                    │
+                ▼                    ▼                    ▼
+        ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+        │   Logistic   │     │ Multinomial  │     │  Linear SVM  │
+        │  Regression  │     │ Naive Bayes  │     │              │
+        └──────┬───────┘     └──────┬───────┘     └──────┬───────┘
+               │                    │                    │
+               └────────────────────┼────────────────────┘
+                                    │
+                                    ▼
+                         ┌────────────────────────┐
+                         │  SENTIMENT PREDICTION  │
+                         └───────────┬────────────┘
+                                     │
+                                     ▼
+                         ┌────────────────────────┐
+                         │ RESULTS & VISUALIZATION│
+                         └────────────────────────┘
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 <div align="center">
 
-|          Category          | Technologies                |
-| :------------------------: | :-------------------------- |
-|       🐍 **Language**      | Python                      |
-|   🧠 **Machine Learning**  | Scikit-learn                |
-|        💬 **Domain**       | Natural Language Processing |
-| 🔢 **Feature Engineering** | Text Vectorization          |
-|   📊 **Data Processing**   | Pandas, NumPy               |
-|    📈 **Visualization**    | Matplotlib                  |
-|     🧩 **Architecture**    | Modular Python Application  |
-|   🔧 **Version Control**   | Git & GitHub                |
+| Category                | Technology                              |
+| :---------------------- | :-------------------------------------- |
+| 🐍 **Programming**      | Python                                  |
+| 🤖 **Machine Learning** | Scikit-learn                            |
+| 🧠 **Domain**           | Natural Language Processing             |
+| 🔤 **Text Processing**  | Feature Extraction & Text Vectorization |
+| 📊 **Data Processing**  | Pandas, NumPy                           |
+| 📈 **Visualization**    | Matplotlib                              |
+| 🌐 **Web Application**  | Streamlit                               |
+| 🔧 **Version Control**  | Git & GitHub                            |
+| ☁️ **Deployment**       | Streamlit Community Cloud               |
 
 </div>
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Architecture
 
 ```text
 SentimentAnalysis/
@@ -184,6 +216,11 @@ SentimentAnalysis/
 │   ├── 📦 requirements.txt
 │   └── .gitignore
 │
+├── 📂 assets/
+│   ├── dashboard.png
+│   ├── prediction.png
+│   └── analytics.png
+│
 ├── .gitignore
 └── README.md
 ```
@@ -194,51 +231,77 @@ SentimentAnalysis/
 
 ### 🚀 `app.py`
 
-Main entry point responsible for integrating the application interface and sentiment analysis functionality.
+The main application entry point responsible for integrating the user interface with the sentiment analysis functionality.
 
 ### 🧠 `core/pipeline.py`
 
-Implements the core NLP processing and machine learning prediction workflow.
+Contains the primary text-processing and machine learning prediction pipeline.
 
 ### 📊 `core/charts.py`
 
-Handles analytical charts and result visualization.
+Handles analytical charts and visualization components.
 
 ### 🔐 `auth.py`
 
-Provides authentication-related functionality.
+Provides application authentication functionality.
 
 ### 🎨 `ui/styles.py`
 
-Controls application styling and presentation.
+Manages visual styling and interface presentation.
 
 ### 🗂️ `ui/tabs.py`
 
-Organizes application functionality into structured interface sections.
+Organizes application features into structured interface sections.
 
 ---
 
-## ⚙️ Installation & Setup
+## 📸 Application Preview
 
-### 1️⃣ Clone the Repository
+<div align="center">
+
+### 🏠 Application Dashboard
+
+<img src="assets/dashboard.png" width="850" alt="SentimentIQ Dashboard">
+
+<br><br>
+
+### 🧠 Real-Time Sentiment Prediction
+
+<img src="assets/prediction.png" width="850" alt="SentimentIQ Prediction">
+
+<br><br>
+
+### 📊 Model Analysis & Visualization
+
+<img src="assets/analytics.png" width="850" alt="SentimentIQ Analytics">
+
+</div>
+
+> **Note:** Add the corresponding application screenshots to the `assets` directory using the exact filenames shown above.
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/TejaswiniPatil-1/SentimentAnalysis.git
 ```
 
-### 2️⃣ Open the Project
+### 2. Navigate to the Repository
 
 ```bash
 cd SentimentAnalysis
 ```
 
-### 3️⃣ Create Virtual Environment
+### 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### 4️⃣ Activate Environment
+### 4. Activate the Environment
 
 **Windows**
 
@@ -252,7 +315,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 5️⃣ Install Dependencies
+### 5. Install Dependencies
 
 ```bash
 pip install -r sentimentiq/requirements.txt
@@ -260,93 +323,54 @@ pip install -r sentimentiq/requirements.txt
 
 ---
 
-## 💻 Running the Project
+## ▶️ Run Locally
 
-Navigate to the application directory:
-
-```bash
-cd sentimentiq
-```
-
-Run the application's configured entry point.
+Run the Streamlit application from the repository root:
 
 ```bash
-python app.py
+streamlit run sentimentiq/app.py
 ```
 
----
-
-## 📸 Application Preview
-
-> Add screenshots of the working application here to showcase the user interface and project functionality.
-
-<div align="center">
-
-### 🏠 Home / Dashboard
-
-`Add Application Screenshot Here`
-
-<br>
-
-### 🧠 Sentiment Prediction
-
-`Add Prediction Screenshot Here`
-
-<br>
-
-### 📊 Model Comparison
-
-`Add Analytics Screenshot Here`
-
-</div>
-
----
-
-## 🎯 Project Highlights
+The application will be available locally at:
 
 ```text
-✔ Real-Time Sentiment Analysis
-✔ Multi-Model Machine Learning Framework
-✔ Natural Language Processing Pipeline
-✔ Interactive User Interface
-✔ Comparative Model Analysis
-✔ Data Visualization
-✔ Modular Python Architecture
-✔ Authentication Support
+http://localhost:8501
 ```
 
 ---
 
-## 🌍 Potential Applications
+## 🎯 Potential Applications
 
 SentimentIQ can be adapted for:
 
-* 💬 **Social Media Monitoring**
-* ⭐ **Product Review Analysis**
-* 🛒 **Customer Feedback Analysis**
-* 📢 **Brand Sentiment Monitoring**
-* 📋 **Survey Response Analysis**
-* 📰 **Public Opinion Analysis**
+* 💬 Social media sentiment monitoring
+* ⭐ Product review analysis
+* 🛒 Customer feedback analysis
+* 📢 Brand perception monitoring
+* 📋 Survey response analysis
+* 📰 Public opinion analysis
+* 🎯 Marketing and customer-experience analytics
 
 ---
 
 ## 🔮 Future Enhancements
 
-* Integration of transformer-based NLP models
-* Real-time social media analysis
-* Multilingual sentiment classification
-* Advanced model comparison dashboards
-* Explainable AI integration
-* REST API development
-* Cloud deployment
-* Database-backed authentication
-* Enhanced analytical visualizations
+* Transformer-based NLP models
+* Real-time social media integration
+* Multilingual sentiment analysis
+* Explainable AI (XAI)
+* Advanced analytical dashboards
+* REST API integration
+* Cloud-based database support
+* Enhanced authentication
+* Automated model retraining
+* Large-scale sentiment monitoring
 
 ---
 
-## 🔒 Security
+## 🔒 Security & Privacy
 
-Sensitive runtime and authentication data are excluded from version control.
+Sensitive runtime information and authentication records are excluded from version control.
 
 ```text
 .venv/
@@ -354,36 +378,53 @@ SentimentEnv/
 users.json
 __pycache__/
 *.pyc
+.env
 ```
 
-> **Note:** Credentials, passwords, API keys, authentication records, and environment-specific secrets should never be committed to a public repository.
+> **Security Notice:** API keys, passwords, credentials, authentication records, and environment secrets should never be committed to a public GitHub repository.
 
 ---
 
-## 👩‍💻 Developed By
+## 🚀 Deployment
+
+The application is deployed using **Streamlit Community Cloud** and connected directly to this GitHub repository.
+
+Any production-ready updates pushed to the configured deployment branch can be reflected in the deployed application.
 
 <div align="center">
 
-### Tejaswini Patil
-
-**MCA | Python | Machine Learning | NLP | Software Development**
-
-[![GitHub](https://img.shields.io/badge/GitHub-TejaswiniPatil--1-181717?style=for-the-badge\&logo=github)](https://github.com/TejaswiniPatil-1)
-
-<br>
-
-*Building intelligent solutions through code, data, and machine learning.*
+[![Launch App](https://img.shields.io/badge/🚀_LAUNCH-SentimentIQ-FF4B4B?style=for-the-badge\&logo=streamlit)](https://sentimentiq-tejaswini.streamlit.app/)
 
 </div>
 
 ---
 
+## 👩‍💻 Developer
+
 <div align="center">
 
-### ⭐ Support This Project
+### Tejaswini Patil
 
-If you found **SentimentIQ** useful or interesting, consider giving the repository a ⭐.
+**Machine Learning • NLP • Python • Software Development**
 
-**Made with Python, Machine Learning & NLP**
+[![GitHub](https://img.shields.io/badge/GitHub-TejaswiniPatil--1-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/TejaswiniPatil-1)
+
+<br>
+
+*Building intelligent applications through Machine Learning and Natural Language Processing.*
+
+</div>
+
+---
+
+## ⭐ Support
+
+<div align="center">
+
+If you find **SentimentIQ** useful, consider giving this repository a **⭐ Star**.
+
+### 🧠 SentimentIQ
+
+**Analyze • Predict • Compare • Visualize**
 
 </div>
